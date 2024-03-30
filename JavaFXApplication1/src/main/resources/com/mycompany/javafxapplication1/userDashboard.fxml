@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.javafxapplication1.UserDashboardController">
+   <children>
+      <TextField fx:id="txtNameDisplay" editable="false" layoutX="129.0" layoutY="37.0" prefHeight="30.0" prefWidth="206.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="43.0" layoutY="42.0" text="Welcome">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="selectBtn" layoutX="224.0" layoutY="101.0" mnemonicParsing="false" onAction="#selectBtnHandler" prefHeight="31.0" prefWidth="255.0" text="Select File Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text fx:id="fileText" layoutX="224.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="422.4000244140625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Label layoutX="41.0" layoutY="107.0" text="Select file to uplode">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="userFilesTableView" layoutX="43.0" layoutY="241.0" prefHeight="285.0" prefWidth="622.0" />
+      <Label layoutX="296.0" layoutY="198.0" text="My File List">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnDelete" layoutX="43.0" layoutY="539.0" mnemonicParsing="false" onAction="#btnDeleteAction" prefHeight="26.0" prefWidth="146.0" text="Delete Selected">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRefresh" layoutX="216.0" layoutY="539.0" mnemonicParsing="false" onAction="#btnRefreshAction" prefHeight="26.0" prefWidth="146.0" text="Refresh">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUplode" layoutX="492.0" layoutY="101.0" mnemonicParsing="false" onAction="#btnUplodeAction" prefHeight="30.0" prefWidth="146.0" text="Uplode">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnViewOther" layoutX="345.0" layoutY="38.0" mnemonicParsing="false" onAction="#btnViewOtherAction" prefHeight="30.0" prefWidth="293.0" text="View Other Users" textFill="#2903ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPermision" layoutX="376.0" layoutY="539.0" mnemonicParsing="false" onAction="#btnPermisionAction" prefHeight="30.0" prefWidth="294.0" text="Grant permissions to Users" textFill="#2c02ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
